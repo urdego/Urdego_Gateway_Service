@@ -11,5 +11,4 @@ public class UrdegoGatewayServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(UrdegoGatewayServiceApplication.class, args);
     }
-    
 }
