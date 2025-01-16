@@ -18,9 +18,14 @@ repositories {
 }
 
 ext {
-    set('springCloudVersion', "2023.0.0")
+    springCloudVersion = "2023.0.0"
 }
 
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:2023.0.1"
+    }
+}
 dependencies {
     //Spring
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
@@ -36,11 +41,6 @@ dependencies {
     implementation 'org.projectlombok:lombok'
 }
 
-dependencyManagement {
-    imports {
-        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
-    }
-}
 
 tasks.named('test') {
     useJUnitPlatform()
