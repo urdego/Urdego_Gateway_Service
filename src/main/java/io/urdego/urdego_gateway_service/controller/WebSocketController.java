@@ -1,3 +1,4 @@
+/*
 package io.urdego.urdego_gateway_service.controller;
 
 import io.urdego.urdego_gateway_service.dto.MessageInfo;
@@ -56,3 +57,4 @@ public class WebSocketController {
         
     }
 }
+*/

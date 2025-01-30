@@ -1,3 +1,4 @@
+/*
 package io.urdego.urdego_gateway_service.config;
 
 import org.springframework.cloud.gateway.route.RouteLocator;
@@ -22,4 +23,4 @@ public class GatewayConfig {
                 // 기타 WebSocket 요청 처리 (필요하면 추가)
                 .build();
     }
-}
+}*/
