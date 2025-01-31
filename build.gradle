@@ -27,18 +27,15 @@ dependencyManagement {
     }
 }
 dependencies {
-
     //Spring
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'org.springframework.security:spring-security-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-
-    //WebSocket
-    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
 
     // spring cloud
     implementation 'org.springframework.cloud:spring-cloud-starter-gateway'
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+
+    //swagger
     implementation 'org.springdoc:springdoc-openapi-starter-webflux-ui:2.5.0'
 
     // lombok
